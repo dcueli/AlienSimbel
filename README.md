@@ -1,34 +1,36 @@
-# 🏺 Abu Simbel Profanation
+# ❓ Nombre del juego: **POR DETERMINAR**
+# 🏺 AlienSimbel
 
+## Abu simbel profanation
 [🎥 Ver en YouTube](https://www.youtube.com/watch?v=trP6ZcmyF-I)
 
 ## 👥 Equipo de Desarrollo
 
-- **Ricardo** (👾 Enemigo 2º del delegado): 💻 Programador, 🎵 Sonido/Música, 🎮 Control Manu
+- **Ricardo**: 💻 Programador, 🎵 Sonido/Música, 🎮 Control Manu
 - **David Ruiz**: 💻 Programador
 - **Manuel**: 🎨 Diseñador Arte/💻 Programador, 📜 Narrativa
 - **Julio**: 🎨 Diseñador Arte/UI
-- **Rafa** (👾 Enemigo 3º del delegado): 🎨 Diseñador Arte/UI
-- **David** (👾 Enemigo del delegado): 💻 Programador
+- **Rafa**: 🎨 Diseñador Arte/UI
+- **David**: A saber...
 
 ## 🌍 Temática
 
 - 🏺 Pirámide Egipcia
 - 👽 Aliens
-- 🎭 Protagonista elegible: 🧑‍🚀 Explorador o 👽 Alien
+- 🎭 Protagonista elegible: 🧑‍🚀 Explorador ¿o 👽 Alien (PENDIENTE DE DECIDIR)?
 - 📜 [Referencia científica](https://www.eldebate.com/ciencia/20250325/hallazgo-ciudad-bajo-piramide-desata-polemica-entre-expertos-no-hay-evidencia-cientifica_281622.html)
 
 ## 🎮 Mecánicas
 
 - **⬇️ Flow:**
   - 🧑‍🚀 Explorador: empieza de arriba hacia abajo
-  - 👽 Alien: empieza de abajo hacia arriba
+  - ¿👽 Alien?: empieza de abajo hacia arriba
 
 ## 📝 Historia
 
 - **🎭 Tono:** Irónico con humor negro
 - **🗨️ Ejemplo de diálogo:**
-  - *Superas un nivel difícil* → "Joe macho, me debería haber hecho OnlyFans, que es más fácil."
+  - *Superas un nivel difícil* → "Joe macho, me debería haber hecho un OnlyFans, que es más fácil."
 - **🔎 Descubrimiento de lore:** ¿Por qué están ahí las pirámides?
 
 ## 🏗️ Estructura de Niveles
@@ -41,5 +43,3 @@
 - **📈 Incremento de dificultad:**
   - 1️⃣ nivel de exploración
   - 3️⃣ niveles de combate por fase
-
-## ❓ Nombre del juego: **POR DETERMINAR**
