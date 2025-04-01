@@ -11,7 +11,7 @@
 - **Manuel**: 🎨 Diseñador Arte/💻 Programador, 📜 Narrativa
 - **Julio**: 🎨 Diseñador Arte/UI
 - **Rafa**: 🎨 Diseñador Arte/UI
-- **David**: A saber...
+- **David**: Programador, Gestión, a saber...
 
 ## 🌍 Temática
 
