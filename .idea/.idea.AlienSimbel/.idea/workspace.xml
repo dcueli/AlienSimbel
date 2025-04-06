@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="" />
+    <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraBias.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraBias.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.inputactions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.inputactions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/GroundCheck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/GroundCheck.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerComponents.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerComponents.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerJump.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerJump.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts/PlayerMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2vBWVPLLgnyOSl3zQxm2ZefgFzM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,8 +55,13 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop-Zetille03",
+    "git-widget-placeholder": "feature73",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,6 +118,8 @@
       <option name="presentableId" value="Default" />
       <updated>1743618970990</updated>
       <workItem from="1743618972533" duration="232000" />
+      <workItem from="1743873898091" duration="2614000" />
+      <workItem from="1743962001362" duration="7355000" />
     </task>
     <servers />
   </component>
