@@ -32,7 +32,7 @@ class PauseMenu : BasePauseMenu {
 		// END::@dcueli -> enable warning CS0162 (unrecheable code)
 
     ToogleGamePause(false);
-    ScenesManager.Load(Scenes.Main);
+    GameManager.instance.scenesManager.LoadScene(Scenes.Main);
   }
 
   public override void ExitGame() {

@@ -5,11 +5,11 @@ public class GameMenu : MonoBehaviour, IGameOptions {
 		// BEGIN::@dcueli -> disable warning CS0162 (unrecheable code)
 		#pragma warning disable CS0162 
     if(Env.Dev == Core.NODE_ENV)
-      Debug.Log("GameMenu > LoadMainMenuScn > Cargando la Escena: <Menú principal>...");
+      Debug.Log("GameMenu > LoadMainMenuScn > Loading Scene: <Main Menu>...");
 		#pragma warning restore CS0162
 		// END::@dcueli -> enable warning CS0162 (unrecheable code)
 
-    ScenesManager.Load(Scenes.Main);
+    GameManager.instance.scenesManager.LoadScene(Scenes.Main);
   }
 
   public void PlayGameScn() {
@@ -22,7 +22,7 @@ public class GameMenu : MonoBehaviour, IGameOptions {
 		// END::@dcueli -> enable warning CS0162 (unrecheable code)
 
 		GameManager.instance.StartGame();
-    ScenesManager.Load(Scenes.Main);
+    GameManager.instance.scenesManager.LoadScene(Scenes.Main);
   }
 
   public void ExitGame() {

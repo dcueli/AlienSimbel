@@ -31,11 +31,11 @@ public class ScenesManager : BaseScenesManager {
 			_scenesTransition = new ScenesTransition();
 	}
 
-  public static void Load(string pScnName = null) {
+  public void LoadScene(string pScnName = null) {
     if (null == pScnName)
       Debug.LogError("The Scene loader has received a NULL scene name");
 
-    if (!!!ScenesManager.CheckSceneExists(pScnName))
+    if (!!!GameManager.instance.scenesManager.CheckSceneExists(pScnName))
       Debug.LogError($"The scene <pScnName:{pScnName}> not exists in the Scene loader");
 
     Debug.Log($"Loading scene <pScnName:{pScnName}>...");
@@ -48,18 +48,19 @@ public class ScenesManager : BaseScenesManager {
 
 
 
-	public void LoadInmediately(
-		string pScnName, 
-		LoadSceneMode pMode = LoadSceneMode.Single
-	) {
-    SceneManager.LoadScene(pScnName, pMode);
+	public void LoadInmediately(string pScnName) {
+    SceneManager.LoadScene(pScnName);
+	}
+
+	public void LoadScnAdditive(string pScnName) {
+    SceneManager.LoadScene(pScnName, LoadSceneMode.Additive);
 	}
 
 	public void UnloadScene(string pScnName) {
 		//
 	}
 
-	public static bool CheckSceneExists(string pScnName) {
+	public bool CheckSceneExists(string pScnName) {
     if (null == pScnName)
 			return false;
 
@@ -90,10 +91,10 @@ public class ScenesManager : BaseScenesManager {
 	 * Retrieve the current Scene
 	 * ================================================================================================
 	 */
-	public static SceneInfo GetCurrentSceneInfo() {
+	public SceneInfo GetCurrentSceneInfo() {
     return new SceneInfo(SceneManager.GetActiveScene());
 	}
-	public static Scene GetCurrentSceneInfo(bool pNative) {
+	public Scene GetCurrentSceneInfo(bool pNative) {
     return SceneManager.GetActiveScene();
 	}
 }

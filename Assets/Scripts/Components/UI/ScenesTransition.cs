@@ -1,9 +1,6 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Scripting;
-using UnityEngine.U2D.IK;
 
 public class ScenesTransition : MonoBehaviour {
 	private Animator Animator;
@@ -13,6 +10,7 @@ public class ScenesTransition : MonoBehaviour {
 	// ParameterStringMode for the callback method
 	private Action<string> cb;
 	private string SceneName;
+	private LoadSceneMode Mode;
 
 
 	private void Awake() {

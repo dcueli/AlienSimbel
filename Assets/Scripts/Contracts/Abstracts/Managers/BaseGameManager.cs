@@ -48,7 +48,7 @@ public abstract class BaseGameManager :
 
   protected void ResetGame() {
     Debug.LogWarning("Back to Main menu and exiting game...");
-    SceneManager.LoadScene("MainScn");
+    GameManager.instance.scenesManager.LoadScene("MainScn");
 
     if (null == gameMenu) {
       Application.Quit();

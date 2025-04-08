@@ -54,7 +54,7 @@ public class GameManager : BaseGameManager{
 		// Set GameMenu Object in <gameMenu> property because will need to build the menu options of both
 		// "Main Menu" and "Track selector Menu" and "Pause Menu"
     gameMenu = FindObjectOfType<GameMenu>();
-		currScn = ScenesManager.GetCurrentSceneInfo() ?? null;
+		currScn = GameManager.instance.scenesManager.GetCurrentSceneInfo() ?? null;
 			
 		// BEGIN::@dcueli -> disable warning CS0162 (unrecheable code)
 		#pragma warning disable CS0162
