@@ -1,0 +1,3 @@
+interface IGameOptions {
+  void ExitGame();
+}
