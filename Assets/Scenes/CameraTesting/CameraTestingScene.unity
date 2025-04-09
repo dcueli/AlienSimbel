@@ -2870,6 +2870,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1235801844}
+    - target: {fileID: 3771632317695667617, guid: e21245075b5ad694e8d30a07acdfe6a5, type: 3}
+      propertyPath: customInspectorObjects.panTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6920566185114342570, guid: e21245075b5ad694e8d30a07acdfe6a5, type: 3}
       propertyPath: _playerInput
       value: 
