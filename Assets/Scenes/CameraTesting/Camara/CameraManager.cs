@@ -3,9 +3,8 @@ using System.Collections;
 using Cinemachine;
 using UnityEngine;
 
-namespace Scenes.CameraTesting.Camara
-{
-    /// <summary>
+
+/// <summary>
 /// Manages camera behavior, including Y-axis damping changes on player fall
 /// and camera panning when the player interacts with triggers.
 /// </summary>
@@ -144,6 +143,4 @@ public class CameraManager : MonoBehaviour
             yield return null;
         }
     }
-}
-
 }

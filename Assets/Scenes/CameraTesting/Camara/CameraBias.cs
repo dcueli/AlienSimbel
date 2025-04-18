@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Scenes.CameraTesting.Camara;
 using UnityEngine;
 
 /// <summary>

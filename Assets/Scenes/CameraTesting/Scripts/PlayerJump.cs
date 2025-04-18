@@ -1,4 +1,3 @@
-using Scenes.CameraTesting.Camara;
 using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
