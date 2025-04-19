@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/EnemyDropCicleMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/EnemyDropCicleMovement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/EnemyVerticalMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/EnemyVerticalMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/Arrow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/Arrow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/IThrowable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Scripts/IThrowable.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/EnemiesMovement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/EnemiesMovement.unity" afterDir="false" />
     </list>
@@ -32,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/DMPFP-85",
+    "git-widget-placeholder": "feature/DMPFP-86",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,6 +108,7 @@
       <workItem from="1744189133259" duration="697000" />
       <workItem from="1745051274913" duration="2635000" />
       <workItem from="1745054570518" duration="1924000" />
+      <workItem from="1745057987014" duration="1568000" />
     </task>
     <servers />
   </component>
