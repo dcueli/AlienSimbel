@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/EnemiesMovement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/EnemiesMovement.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Materials/HorizontalEnemyMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnemiesMovement/Materials/HorizontalEnemyMat.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <workItem from="1743873898091" duration="2614000" />
       <workItem from="1743962001362" duration="7355000" />
       <workItem from="1744189133259" duration="697000" />
-      <workItem from="1745051274913" duration="2369000" />
+      <workItem from="1745051274913" duration="2635000" />
     </task>
     <servers />
   </component>
