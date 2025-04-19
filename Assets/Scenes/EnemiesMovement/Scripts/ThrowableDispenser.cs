@@ -12,6 +12,10 @@ public class ThrowableDispenser : MonoBehaviour
     [SerializeField] private ThrowableDirection shootDirection = ThrowableDirection.Left;
     [SerializeField] private float spawnInterval = 1f;
 
+    [Header("Dispenser Activation")]
+    [SerializeField] private bool canBeDeactivated = false; 
+    [SerializeField] private bool isActive = true; 
+
     private List<IThrowable> _throwablePool = new List<IThrowable>();
 
     private void Start()
@@ -32,7 +36,10 @@ public class ThrowableDispenser : MonoBehaviour
     {
         while (true)
         {
-            SpawnThrowable();
+            if (isActive)
+            {
+                SpawnThrowable();
+            }
             yield return new WaitForSeconds(spawnInterval);
         }
     }
@@ -46,7 +53,7 @@ public class ThrowableDispenser : MonoBehaviour
             float value = (int)shootDirection;
             Vector2 direction = new Vector2(value, 0);
             throwable.transform.rotation = Quaternion.LookRotation(Vector3.forward, direction); // opcional
-            
+
             throwable.Launch(direction, throwableSpeed, ReturnThrowableToPool);
         }
     }
@@ -66,9 +73,18 @@ public class ThrowableDispenser : MonoBehaviour
         throwable.gameObject.SetActive(false);
     }
 
+    public void SetActiveState(bool active)
+    {
+        if (canBeDeactivated)
+        {
+            isActive = active;
+        }
+    }
+
     enum ThrowableDirection
     {
         Left = -1,
         Right = 1
     }
+
 }
