@@ -26,7 +26,10 @@ public class PlayerJump : MonoBehaviour
 
         _jumpSpeed = Mathf.Abs(gravity) * timeToJumpApex;
 
-        _fallSpeedYDampingChangeThreshold = CameraManager.Instance.fallSpeedYDampingChangeThreshold;
+        if (CameraManager.Instance != null)
+        {
+            _fallSpeedYDampingChangeThreshold = CameraManager.Instance.fallSpeedYDampingChangeThreshold;
+        }
 
     }
     
@@ -65,22 +68,25 @@ public class PlayerJump : MonoBehaviour
         }
 
         _playerComponents.Rigidbody2D.gravityScale = _gravityScale * gravMultiplier;
-        
-        
-        //Region manejo CameraYDamping
-        if (_playerComponents.Rigidbody2D.velocity.y < _fallSpeedYDampingChangeThreshold &&
-            !CameraManager.Instance.IsLerpingYDamping && !CameraManager.Instance.LerpedFromPlayerFalling)
-        {
-            CameraManager.Instance.LerpYDamping(true);
-        }
 
-        if (_playerComponents.Rigidbody2D.velocity.y >= 0f && !CameraManager.Instance.IsLerpingYDamping &&
-            CameraManager.Instance.LerpedFromPlayerFalling)
+        if (CameraManager.Instance != null)
         {
-            CameraManager.Instance.LerpedFromPlayerFalling = false;
+            //Region manejo CameraYDamping
+            if (_playerComponents.Rigidbody2D.velocity.y < _fallSpeedYDampingChangeThreshold &&
+                !CameraManager.Instance.IsLerpingYDamping && !CameraManager.Instance.LerpedFromPlayerFalling)
+            {
+                CameraManager.Instance.LerpYDamping(true);
+            }
+
+            if (_playerComponents.Rigidbody2D.velocity.y >= 0f && !CameraManager.Instance.IsLerpingYDamping &&
+                CameraManager.Instance.LerpedFromPlayerFalling)
+            {
+                CameraManager.Instance.LerpedFromPlayerFalling = false;
             
-            CameraManager.Instance.LerpYDamping(false);
+                CameraManager.Instance.LerpYDamping(false);
+            }
         }
+        
         
     }
 
