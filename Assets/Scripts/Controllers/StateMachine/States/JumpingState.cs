@@ -16,7 +16,7 @@ public class JumpingState : IPlayerState
 
     public void Update()
     {
-        if (player.rb.velocity.y < 0)
+        if (player.isFalling())
         {
             player.ChangeState(new FallingState(player));
             return;

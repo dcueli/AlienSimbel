@@ -42,4 +42,28 @@ public class PlayerStateMachine : MonoBehaviour
     {
         return Physics2D.OverlapCircle(transform.position, 0.5f, ropeLayer);
     }
+    public bool IsMovingHorizontally()
+    {
+      return   Mathf.Abs(rb.velocity.x) > 0.1f;
+    }
+    public bool IsMovingVertically()
+    {
+        return Input.GetAxisRaw("Vertical") > 0;
+    }
+    public bool IsJumping()
+    {
+        return Input.GetButtonDown("Jump");
+    }
+    public bool IsNotMovingHorizontally()
+    {
+        return Mathf.Abs(rb.velocity.x) < 0.1f;
+    }
+    public bool isFalling()
+    {
+        return rb.velocity.y < 0;
+    }
+    public bool IsNotMovingVertically()
+    {
+        return Input.GetAxisRaw("Vertical") <= 0;
+    }
 }

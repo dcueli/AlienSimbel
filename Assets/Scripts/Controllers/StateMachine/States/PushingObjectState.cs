@@ -19,7 +19,7 @@ public class PushingObjectState : IPlayerState
             return;
         }
 
-        if (Mathf.Abs(player.rb.velocity.x) < 0.1f)
+        if (player.IsNotMovingHorizontally())
         {
             player.ChangeState(new IdleState(player));
             return;

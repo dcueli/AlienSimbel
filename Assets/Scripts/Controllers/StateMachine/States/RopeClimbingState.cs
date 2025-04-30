@@ -27,21 +27,21 @@ public class RopeClimbingState : IPlayerState
         float verticalInput = Input.GetAxisRaw("Vertical");
         player.rb.velocity = new Vector2(0, verticalInput * 3f); // Velocidad de subida/bajada
 
-        if (Input.GetButtonDown("Jump"))
+        if (player.IsJumping())
         {
             player.rb.gravityScale = 1f;
             player.ChangeState(new JumpingState(player));
             return;
         }
 
-        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f && player.IsGrounded())
+        if (player.IsNotMovingHorizontally() && player.IsGrounded())
         {
             player.rb.gravityScale = 1f;
             player.ChangeState(new WalkingState(player));
             return;
         }
 
-        if (player.IsGrounded() && verticalInput <= 0)
+        if (player.IsGrounded() && player.IsNotMovingVertically())
         {
             player.rb.gravityScale = 1f;
             player.ChangeState(new IdleState(player));

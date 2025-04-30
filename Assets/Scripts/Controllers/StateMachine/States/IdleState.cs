@@ -19,13 +19,13 @@ public class IdleState : IPlayerState
             return;
         }
 
-        if (Mathf.Abs(player.rb.velocity.x) > 0.1f)
+        if (player.IsMovingHorizontally())
         {
             player.ChangeState(new WalkingState(player));
             return;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (player.IsJumping())
         {
             player.ChangeState(new JumpingState(player));
             return;
@@ -37,11 +37,12 @@ public class IdleState : IPlayerState
             return;
         }
 
-        if (player.IsTouchingRope() && Input.GetAxisRaw("Vertical") > 0)
+        if (player.IsTouchingRope() && player.IsMovingVertically())
         {
             player.ChangeState(new RopeClimbingState(player));
             return;
         }
+
     }
 
     public void Exit() { }

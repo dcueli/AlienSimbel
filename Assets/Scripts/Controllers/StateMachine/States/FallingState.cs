@@ -13,7 +13,7 @@ public class FallingState : IPlayerState
 
     public void Update()
     {
-        if (player.IsTouchingRope() && Input.GetAxisRaw("Vertical") > 0)
+        if (player.IsTouchingRope() && player.IsMovingVertically())
         {
             player.ChangeState(new RopeClimbingState(player));
             return;
