@@ -327,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515778234995291205, guid: f79aecde58ae8af44ad618f3b12addca, type: 3}
       propertyPath: spawnInterval
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3515778234995291205, guid: f79aecde58ae8af44ad618f3b12addca, type: 3}
       propertyPath: shootDirection
@@ -1046,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515778234995291205, guid: f79aecde58ae8af44ad618f3b12addca, type: 3}
       propertyPath: spawnInterval
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3515778234995291205, guid: f79aecde58ae8af44ad618f3b12addca, type: 3}
       propertyPath: shootDirection
