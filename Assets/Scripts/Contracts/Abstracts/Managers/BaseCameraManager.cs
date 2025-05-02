@@ -1,11 +1,10 @@
 using Cinemachine;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 /**
  * ================================================================================================
  * BaseCameraManager
- * 	 Extends: 	 Singleton<BaseCameraManager>
+ * 	 Extends: 	 Singleton<CameraManager>
  *   Implements: IGameManager, IButtonsManager
  * ------------------------------------------------------------------------------------------------
  * DESCRIPTION
@@ -16,7 +15,7 @@ using UnityEngine.SceneManagement;
  * make easy to create new managers.
  * ================================================================================================
  */
-public abstract class BaseCameraManager : Singleton<GameManager> {
+public abstract class BaseCameraManager : Singleton<CameraManager> {
   // To know what enviroment it is
   [SerializeField] public GameObject DebugMsgObj;
 
@@ -34,23 +33,8 @@ public abstract class BaseCameraManager : Singleton<GameManager> {
 	public float fallSpeedYDampingChangeThreshold = -15f;
 
 	// Indicates whether the camera is currently interpolating the Y damping.
-	public bool IsLerpingYDamping { get; private set; }
+	public bool isLerpingYDamping { get; set; }
 
 	// Indicates whether the Y damping was changed due to player falling.
-	public bool LerpedFromPlayerFalling { get; set; }
-
-  /**
-	 * ================================================================================================
-	 * Protected Method
-	 * 	 ToogleEnableMouse
-   *
-	 * @Parameters:
-	 *		bool state, TRUE by default
-	 * @Returns: void
-	 * ------------------------------------------------------------------------------------------------
-	 * DESCRIPTION
-	 * ONLY FOR PRODUCTION ENVIROMENT
-	 * This lock the mouse pointer when game is running
-	 * ================================================================================================
-	 */
+	public bool isLerpedFromPlayerFalling { get; set; }
 }
