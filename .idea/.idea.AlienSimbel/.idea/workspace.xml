@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraManager.OLD.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraManager.OLD.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraHorizontalPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraHorizontalPosition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraTransitionTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraTransitionTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Managers/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Managers/CameraManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Scripts.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/DMPFP-80",
+    "git-widget-placeholder": "develop-Zetille03",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,6 +100,7 @@
       <workItem from="1745054570518" duration="1924000" />
       <workItem from="1745057987014" duration="1568000" />
       <workItem from="1746193422068" duration="3707000" />
+      <workItem from="1747149485331" duration="340000" />
     </task>
     <servers />
   </component>
