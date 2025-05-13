@@ -46,7 +46,7 @@ public class CameraManager : BaseCameraManager {
 
 				// Find the initial camera if it is enabled (or it has the configured enabled priotiry)
 				// If the a enabled camera at the init must be the current camera
-				if (allVirtualCameras[i].enabled || allVirtualCameras[i].m_Priority == activeCameraPriority) {
+				if (allVirtualCameras[i].m_Priority == activeCameraPriority || allVirtualCameras[i].gameObject.activeSelf) {
 					_currentCamera = allVirtualCameras[i];
 					// To ensure the initial camera has the enabled priority if the CinemachineBrain select it
 					_currentCamera.m_Priority = activeCameraPriority;
@@ -102,7 +102,9 @@ public class CameraManager : BaseCameraManager {
 		}
 		// If already using this camera
 		if (targetCamera == _currentCamera)
+		{
 			return;
+		}
 
 		// Lower priority of the current camera if it exists and is different
 		// Is important to check if the same camera in case it is called several 
@@ -117,7 +119,7 @@ public class CameraManager : BaseCameraManager {
 		// the function <damping, pan> works on it
 		_currentCamera = targetCamera;
 		_framingTransposer = _currentCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-
+		_currentCamera.gameObject.SetActive(true);
 		// If the transposer exists, also update reference offsets for the panning/damping
 		if (null != _framingTransposer) {
 			_startingTrackedObjectOffset = _framingTransposer.m_TrackedObjectOffset;
@@ -262,5 +264,27 @@ public class CameraManager : BaseCameraManager {
 		_panCameraCoroutine = null;		
 	}
 
-
+	/**
+	 * ================================================================================================
+	 * public Method
+	 * 	 GetCurrentCameraIndex
+   *
+	 * @Parameters: none
+	 * @Returns: int, the index of the current active virtual camera in <allVirtualCameras>
+	 * ------------------------------------------------------------------------------------------------
+	 * DESCRIPTION
+	 * Searches through the array <allVirtualCameras> to find the one that matches the current
+	 * active camera <_currentCamera>. Returns its index if found, or -1 if the current camera
+	 * is not in the array.
+	 * ================================================================================================
+	 */
+	public int GetCurrentCameraIndex() {
+		for (int i = 0; i < allVirtualCameras.Length; i++) {
+			if (allVirtualCameras[i] == _currentCamera)
+				return i;
+		}
+		return -1;
+	}
+	
+	
 }

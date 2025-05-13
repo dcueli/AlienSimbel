@@ -17,6 +17,9 @@ public class CameraTransitionTrigger : MonoBehaviour {
 	// Serialized object containing camera behavior configurations for this trigger.
 	public CamInspectorObjects cameraInspectorObjects;
 
+	//initial camera index when transitioning
+	private int _lastCameraIndex = 0;
+	
 	/**
 	 * ================================================================================================
 	 * private Method
@@ -31,7 +34,7 @@ public class CameraTransitionTrigger : MonoBehaviour {
 	 * If it's the player and camera panning is enabled, initiates camera panning
 	 * ================================================================================================
 	 */
-	private void OnTriggerEnter(Collider other) {
+	private void OnTriggerEnter2D(Collider2D other) {
 		if (other.CompareTag("Player") && cameraInspectorObjects.panCameraOnContact) {
 			if (null != CameraManager.instance) {
 				CameraManager.instance.PanCameraOnContact(
@@ -41,9 +44,18 @@ public class CameraTransitionTrigger : MonoBehaviour {
 						false // Not returning to start pos
 				);
 				CameraManager.instance.TransitionToCameraByIndex(targetCameraIndex);
-				gameObject.SetActive(false);
+				// gameObject.SetActive(false);
 			} else {
 				Debug.LogWarning("CameraManager.Instance es nulo!");
+			}
+		}else if (other.CompareTag("Player") && cameraInspectorObjects.swapCameras)
+		{
+			if (null != CameraManager.instance)
+			{
+				_lastCameraIndex = CameraManager.instance.GetCurrentCameraIndex();
+
+				CameraManager.instance.TransitionToCameraByIndex(targetCameraIndex);
+				
 			}
 		}
 	}
@@ -62,7 +74,7 @@ public class CameraTransitionTrigger : MonoBehaviour {
 	 * If it's the player and camera panning is enabled, returns camera to original offset
 	 * ================================================================================================
 	 */
-	private void OnTriggerExit(Collider other) {
+	private void OnTriggerExit2D(Collider2D other) {
 		if (other.CompareTag("Player") && cameraInspectorObjects.panCameraOnContact) {
 			CameraManager.instance.PanCameraOnContact(
 					cameraInspectorObjects.panDistance,
@@ -70,6 +82,10 @@ public class CameraTransitionTrigger : MonoBehaviour {
 					cameraInspectorObjects.panDirection,
 					true // Return to start pos
 			);
+		}else if (other.CompareTag("Player") && cameraInspectorObjects.swapCameras)
+		{
+			CameraManager.instance.TransitionToCameraByIndex(_lastCameraIndex);
+			//CameraManager.instance.TransitionToCameraByIndex(_lastCameraIndex);
 		}
 	}
 }
