@@ -14,7 +14,7 @@ public class CameraControlTrigger : MonoBehaviour
     /// <summary>
     /// Serialized object containing camera behavior configurations for this trigger.
     /// </summary>
-    public CustomInspectorObjects customInspectorObjects;
+    public CamInspectorObjects customInspectorObjects;
 
     private Collider2D _collider2D;
 
@@ -32,7 +32,7 @@ public class CameraControlTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") && customInspectorObjects.panCameraOnContact)
         {
-            CameraManager.Instance.PanCameraOnContact(
+            CameraManager.instance.PanCameraOnContact(
                 customInspectorObjects.panDistance,
                 customInspectorObjects.panTime,
                 customInspectorObjects.panDirection,
@@ -50,7 +50,7 @@ public class CameraControlTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") && customInspectorObjects.panCameraOnContact)
         {
-            CameraManager.Instance.PanCameraOnContact(
+            CameraManager.instance.PanCameraOnContact(
                 customInspectorObjects.panDistance,
                 customInspectorObjects.panTime,
                 customInspectorObjects.panDirection,
@@ -151,7 +151,7 @@ public class MyScriptEditor : Editor
         if (cameraControlTrigger.customInspectorObjects.panCameraOnContact)
         {
             cameraControlTrigger.customInspectorObjects.panDirection =
-                (PanDirection)EditorGUILayout.EnumPopup("Camera Pan direction",
+                (EPanDirection)EditorGUILayout.EnumPopup("Camera Pan direction",
                     cameraControlTrigger.customInspectorObjects.panDirection);
 
             cameraControlTrigger.customInspectorObjects.panDistance =

@@ -26,7 +26,7 @@ public class PlayerJump : MonoBehaviour
 
         _jumpSpeed = Mathf.Abs(gravity) * timeToJumpApex;
 
-        _fallSpeedYDampingChangeThreshold = CameraManager.Instance.fallSpeedYDampingChangeThreshold;
+        _fallSpeedYDampingChangeThreshold = CameraManager.instance.fallSpeedYDampingChangeThreshold;
 
     }
     
@@ -69,17 +69,17 @@ public class PlayerJump : MonoBehaviour
         
         //Region manejo CameraYDamping
         if (_playerComponents.Rigidbody2D.velocity.y < _fallSpeedYDampingChangeThreshold &&
-            !CameraManager.Instance.IsLerpingYDamping && !CameraManager.Instance.LerpedFromPlayerFalling)
+            !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.isLerpedFromPlayerFalling)
         {
-            CameraManager.Instance.LerpYDamping(true);
+            CameraManager.instance.LerpYDamping(true);
         }
 
-        if (_playerComponents.Rigidbody2D.velocity.y >= 0f && !CameraManager.Instance.IsLerpingYDamping &&
-            CameraManager.Instance.LerpedFromPlayerFalling)
+        if (_playerComponents.Rigidbody2D.velocity.y >= 0f && !CameraManager.instance.isLerpingYDamping &&
+            CameraManager.instance.isLerpedFromPlayerFalling)
         {
-            CameraManager.Instance.LerpedFromPlayerFalling = false;
+            CameraManager.instance.isLerpedFromPlayerFalling = false;
             
-            CameraManager.Instance.LerpYDamping(false);
+            CameraManager.instance.LerpYDamping(false);
         }
         
     }

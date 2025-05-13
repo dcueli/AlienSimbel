@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraHorizontalPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraHorizontalPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraTransitionTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Cameras/CameraTransitionTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Managers/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Managers/CameraManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/DMPFP-91",
+    "git-widget-placeholder": "feature/DMPFP-80",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,9 +101,7 @@
       <workItem from="1745051274913" duration="2635000" />
       <workItem from="1745054570518" duration="1924000" />
       <workItem from="1745057987014" duration="1568000" />
-      <workItem from="1745752186399" duration="2790000" />
-      <workItem from="1745919342120" duration="810000" />
-      <workItem from="1745921750374" duration="2524000" />
+      <workItem from="1746193422068" duration="3707000" />
     </task>
     <servers />
   </component>
@@ -112,6 +115,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
