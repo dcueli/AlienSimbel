@@ -27,6 +27,14 @@ public class PlayerStateMachine : MonoBehaviour
         currentState.Enter();
     }
 
+    //SEPARAR EN CLASE DE ACCIONES Y CLASE DE CHEQUEOS
+    public void Move()
+    {
+        
+    }
+    
+    
+    
     // Helpers públicos para estados
     public bool IsGrounded()
     {

@@ -10,8 +10,8 @@ public class PlayerComponents : MonoBehaviour
     public Rigidbody2D Rigidbody2D{get{return _rb2d;}}
     private BoxCollider2D _col2d;
     public BoxCollider2D BoxCollider2D{get{return _col2d;}}
-    private GroundCheck _groundCheck;
-    public GroundCheck GroundCheck{get{return _groundCheck;}}
+    private CollisionCheck _collisionCheck;
+    public CollisionCheck CollisionCheck{get{return _collisionCheck;}}
     private PlayerInput _playerInput;
     public PlayerInput PlayerInput{get{return _playerInput;}}
     
@@ -28,12 +28,12 @@ public class PlayerComponents : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = _groundCheck.IsGrounded(_col2d);
+        isGrounded = _collisionCheck.IsGrounded(_col2d);
     }
 
     private void GetComponents()
     {
-        _groundCheck = GetComponent<GroundCheck>();
+        _collisionCheck = GetComponent<CollisionCheck>();
         _rb2d = GetComponent<Rigidbody2D>();
         _col2d = GetComponent<BoxCollider2D>();
         _playerInput = GetComponent<PlayerInput>();
