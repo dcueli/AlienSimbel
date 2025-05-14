@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Floor
   - MimicActivator
+  - TorchOnSource
+  - TorchOffSource
+  - Torch
   layers:
   - Default
   - TransparentFX
