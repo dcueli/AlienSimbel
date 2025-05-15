@@ -13,22 +13,22 @@ using UnityEngine.UI;
  */
 public static class Tools {
 	/**
-	* ================================================================================================
-	* public static method
-	* 	FindComponentInChildren<T>
-  *			Where <T> is the type of object to filter and return
-	*
-	* @Parameters:
-	*		Gameobject pParent: The parent object where search in
-	*		string pGameObjectName: The object name which have to search
-	*
-	* @Returns: <T>
-  *
-	* ------------------------------------------------------------------------------------------------
-	* DESCRIPTION
-	* - Search only in children of an object
-	* ================================================================================================
-	*/
+	 * ================================================================================================
+	 * public static method
+	 * 	FindComponentInChildren<T>
+   *			Where <T> is the type of object to filter and return
+	 *
+	 * @Parameters:
+	 *		Gameobject pParent: The parent object where search in
+	 *		string pGameObjectName: The object name which have to search
+	 *
+	 * @Returns: <T>
+   *
+	 * ------------------------------------------------------------------------------------------------
+	 * DESCRIPTION
+	 * - Search only in children of an object
+	 * ================================================================================================
+	 */
 	public static T FindComponentInChildren<T>(
 		GameObject pParent, 
 		string pGameObjectName
