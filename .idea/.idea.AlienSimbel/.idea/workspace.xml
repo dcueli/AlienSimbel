@@ -5,21 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerActions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerActions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerComponents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerComponents.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Inputs/PlayerControls.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameplayMechanics/GameplayMechaScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameplayMechanics/GameplayMechaScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/KeyPicking/KeyPickingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/KeyPicking/KeyPickingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/MomiaMimic/MomiaMimicMechanics.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/MomiaMimic/MomiaMimicMechanics.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/TorchOnOff/TorchOnOffScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/TorchOnOff/TorchOnOffScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/CollisionCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/CollisionCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerComponents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerComponents.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerComponents.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/FallingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/FallingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/IdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/IdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/JumpingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/JumpingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/PushingObjectState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/PushingObjectState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/RopeClimbingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/RopeClimbingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/WalkingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/WalkingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/GroundCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/GroundCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerJump.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerJump.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerMovement.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/DMPFP-114",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/DMPFP-114&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
@@ -114,6 +128,8 @@
       <workItem from="1746193422068" duration="3707000" />
       <workItem from="1747149485331" duration="340000" />
       <workItem from="1747239638094" duration="1162000" />
+      <workItem from="1747299108375" duration="10011000" />
+      <workItem from="1747316328609" duration="917000" />
     </task>
     <servers />
   </component>

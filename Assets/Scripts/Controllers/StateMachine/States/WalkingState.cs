@@ -9,35 +9,39 @@ public class WalkingState : IPlayerState
         this.player = player;
     }
 
-    public void Enter() { }
+    public void Enter()
+    {
+        Debug.Log("Walking");
+    }
 
     public void Update()
     {
-        if (!player.IsGrounded())
+        player.PlayerComponents.PlayerActions.Move();
+        if (!player.PlayerComponents.IsGrounded && Mathf.Abs(player.PlayerComponents.Rigidbody2D.velocity.y)<0.1f)
         {
             player.ChangeState(new FallingState(player));
             return;
         }
 
-        if (Mathf.Abs(player.rb.velocity.x) < 0.1f)
+        if (Mathf.Abs(player.PlayerComponents.Rigidbody2D.velocity.x) < 0.1f)
         {
             player.ChangeState(new IdleState(player));
             return;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (player.PlayerComponents.PlayerInput.JumpDesired)
         {
             player.ChangeState(new JumpingState(player));
             return;
         }
 
-        if (player.IsTouchingPushable())
+        if (player.PlayerComponents.IsOnPushable)
         {
             player.ChangeState(new PushingObjectState(player));
             return;
         }
 
-        if (player.IsTouchingRope() && Input.GetAxisRaw("Vertical") > 0)
+        if (player.PlayerComponents.IsOnRope && player.PlayerComponents.PlayerInput.Movement.y > 0)
         {
             player.ChangeState(new RopeClimbingState(player));
             return;

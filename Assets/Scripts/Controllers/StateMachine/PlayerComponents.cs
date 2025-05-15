@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerComponents : MonoBehaviour
 {
@@ -15,9 +15,35 @@ public class PlayerComponents : MonoBehaviour
     private PlayerInput _playerInput;
     public PlayerInput PlayerInput{get{return _playerInput;}}
     
-    
-    public bool isGrounded;
+    private PlayerActions _playerActions;
+    public PlayerActions PlayerActions{get{return _playerActions;}}
 
+    private float _initialGravityScale;
+    public float InitialGravityScale{get{return _initialGravityScale;}}
+    
+    private bool _isGrounded;
+    public bool IsGrounded{
+        get => _isGrounded;
+        set => _isGrounded = value;
+    }
+
+    private bool _isOnRope;
+    public bool IsOnRope
+    {
+        get => _isOnRope;
+        set => _isOnRope = value;
+    }
+
+
+    private bool _isOnPushable;
+
+    public bool IsOnPushable
+    {
+        get => _isOnPushable;
+        set => _isOnPushable = value;
+    }
+    
+    
     
     
     // Start is called before the first frame update
@@ -26,9 +52,16 @@ public class PlayerComponents : MonoBehaviour
         GetComponents();
     }
 
+    private void Start()
+    {
+        _initialGravityScale = Rigidbody2D.gravityScale;
+    }
+
     private void FixedUpdate()
     {
-        isGrounded = _collisionCheck.IsGrounded(_col2d);
+        _isGrounded = _collisionCheck.IsGrounded(_col2d);
+        _isOnRope = _collisionCheck.OnRope;
+        _isOnPushable = _collisionCheck.OnPushable;
     }
 
     private void GetComponents()
@@ -37,5 +70,6 @@ public class PlayerComponents : MonoBehaviour
         _rb2d = GetComponent<Rigidbody2D>();
         _col2d = GetComponent<BoxCollider2D>();
         _playerInput = GetComponent<PlayerInput>();
+        _playerActions = GetComponent<PlayerActions>();
     }
 }

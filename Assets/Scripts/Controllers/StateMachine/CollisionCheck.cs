@@ -9,9 +9,12 @@ public class CollisionCheck : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckDistance = 0.2f; 
     [SerializeField] private float horizontalOffset = 0.4f;
-
+    
     private bool onRope = false;
     public bool OnRope { get => onRope; set => onRope = value; }
+    
+    private bool onPushable = false;
+    public bool OnPushable { get => onPushable; set => onPushable = value; }
     
     public bool IsGrounded(BoxCollider2D collider)
     {
@@ -40,6 +43,11 @@ public class CollisionCheck : MonoBehaviour
         {
             onRope = true;
         }
+
+        if (other.CompareTag("Pushable"))
+        {
+            onPushable = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -47,6 +55,11 @@ public class CollisionCheck : MonoBehaviour
         if (other.CompareTag("Rope"))
         {
             onRope = false;
+        }
+
+        if (other.CompareTag("Pushable"))
+        {
+            onPushable = false;
         }
     }
 }

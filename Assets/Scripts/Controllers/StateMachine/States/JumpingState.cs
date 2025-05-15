@@ -11,18 +11,22 @@ public class JumpingState : IPlayerState
 
     public void Enter()
     {
-        player.rb.velocity = new Vector2(player.rb.velocity.x, 10f); // Valor de salto, ajusta si quieres
+        Debug.Log("Jumping");
+        player.PlayerComponents.PlayerActions.Jump();
     }
 
     public void Update()
     {
-        if (player.rb.velocity.y < 0)
+        player.PlayerComponents.PlayerActions.HandleJumpGravity();
+        player.PlayerComponents.PlayerActions.Move();
+        
+        if (player.PlayerComponents.Rigidbody2D.velocity.y < 0)
         {
             player.ChangeState(new FallingState(player));
             return;
         }
 
-        if (player.IsTouchingRope() && Input.GetAxisRaw("Vertical") > 0)
+        if (player.PlayerComponents.IsOnRope && player.PlayerComponents.PlayerInput.Movement.y > 0)
         {
             player.ChangeState(new RopeClimbingState(player));
             return;

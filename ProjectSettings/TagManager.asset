@@ -10,6 +10,7 @@ TagManager:
   - TorchOffSource
   - Torch
   - Rope
+  - Pushable
   layers:
   - Default
   - TransparentFX

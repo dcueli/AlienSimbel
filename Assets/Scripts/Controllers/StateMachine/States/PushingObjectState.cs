@@ -9,19 +9,22 @@ public class PushingObjectState : IPlayerState
         this.player = player;
     }
 
-    public void Enter() { }
+    public void Enter()
+    {
+        Debug.Log("Pushing");
+    }
 
     public void Update()
     {
-        if (!player.IsTouchingPushable())
+        if (!player.PlayerComponents.IsOnPushable && Mathf.Abs(player.PlayerComponents.Rigidbody2D.velocity.x) < 0.1f)
         {
             player.ChangeState(new IdleState(player));
             return;
         }
 
-        if (Mathf.Abs(player.rb.velocity.x) < 0.1f)
+        if (!player.PlayerComponents.IsOnPushable && Mathf.Abs(player.PlayerComponents.Rigidbody2D.velocity.x) >= 0.1f)
         {
-            player.ChangeState(new IdleState(player));
+            player.ChangeState(new WalkingState(player));
             return;
         }
     }

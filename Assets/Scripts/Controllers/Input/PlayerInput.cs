@@ -25,6 +25,10 @@ public class PlayerInput : MonoBehaviour,PlayerControls.ILocomotionMapActions
         get => _pressingJump;
         set => _pressingJump = value;
     }
+    
+    [Header("Jump Input Buffer")]
+    [SerializeField] private float jumpInputBufferTime = 0.2f; // Tiempo del buffer
+    private float _jumpInputBufferCounter = 0f;
 
     private void Awake()
     {
@@ -48,6 +52,19 @@ public class PlayerInput : MonoBehaviour,PlayerControls.ILocomotionMapActions
         _playerControls.Disable();
     }
 
+    private void Update()
+    {
+        if (_jumpInputBufferCounter > 0)
+        {
+            _jumpInputBufferCounter -= Time.deltaTime;
+            _jumpDesired = true;
+        }
+        else
+        {
+            _jumpDesired = false;
+        }
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         _movement = context.ReadValue<Vector2>();
@@ -57,8 +74,8 @@ public class PlayerInput : MonoBehaviour,PlayerControls.ILocomotionMapActions
     {
         if (context.started)
         {
-            _jumpDesired = true;
             _pressingJump = true;
+            _jumpInputBufferCounter = jumpInputBufferTime;
         }
 
         if (context.canceled)

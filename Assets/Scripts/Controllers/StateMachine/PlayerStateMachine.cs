@@ -2,17 +2,15 @@ using UnityEngine;
 
 public class PlayerStateMachine : MonoBehaviour
 {
-    [Header("Settings")]
-    public Rigidbody2D rb;
-    public LayerMask groundLayer;
-    public LayerMask pushableLayer;
-    public LayerMask ropeLayer;
-
+    
     private IPlayerState currentState;
-
+    private PlayerComponents _playerComponents;
+    public PlayerComponents PlayerComponents { get => _playerComponents;}
+    
     private void Start()
     {
-        ChangeState(new IdleState(this));
+        _playerComponents = GetComponent<PlayerComponents>();
+        ChangeState(new FallingState(this));
     }
 
     private void Update()
@@ -27,27 +25,6 @@ public class PlayerStateMachine : MonoBehaviour
         currentState.Enter();
     }
 
-    //SEPARAR EN CLASE DE ACCIONES Y CLASE DE CHEQUEOS
-    public void Move()
-    {
-        
-    }
     
     
-    
-    // Helpers públicos para estados
-    public bool IsGrounded()
-    {
-        return Physics2D.Raycast(transform.position, Vector2.down, 0.1f, groundLayer);
-    }
-
-    public bool IsTouchingPushable()
-    {
-        return Physics2D.OverlapCircle(transform.position, 0.5f, pushableLayer);
-    }
-
-    public bool IsTouchingRope()
-    {
-        return Physics2D.OverlapCircle(transform.position, 0.5f, ropeLayer);
-    }
 }

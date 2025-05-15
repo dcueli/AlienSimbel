@@ -9,19 +9,25 @@ public class FallingState : IPlayerState
         this.player = player;
     }
 
-    public void Enter() { }
+    public void Enter()
+    {
+        Debug.Log("Falling");
+    }
 
     public void Update()
     {
-        if (player.IsTouchingRope() && Input.GetAxisRaw("Vertical") > 0)
+        player.PlayerComponents.PlayerActions.HandleJumpGravity();
+        player.PlayerComponents.PlayerActions.Move();
+        
+        if (player.PlayerComponents.IsOnRope && player.PlayerComponents.PlayerInput.Movement.y > 0)
         {
             player.ChangeState(new RopeClimbingState(player));
             return;
         }
 
-        if (player.IsGrounded())
+        if (player.PlayerComponents.IsGrounded)
         {
-            if (Mathf.Abs(player.rb.velocity.x) > 0.1f)
+            if (Mathf.Abs(player.PlayerComponents.Rigidbody2D.velocity.x) > 0.1f)
                 player.ChangeState(new WalkingState(player));
             else
                 player.ChangeState(new IdleState(player));
