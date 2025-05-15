@@ -9,6 +9,8 @@ TagManager:
   - TorchOnSource
   - TorchOffSource
   - Torch
+  - Rope
+  - Pushable
   layers:
   - Default
   - TransparentFX
@@ -20,8 +22,8 @@ TagManager:
   - MimicActivator
   - 
   - 
-  - 
-  - 
+  - Rope
+  - Pusable
   - 
   - 
   - 
