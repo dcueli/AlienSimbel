@@ -6,7 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Blockouts/Fase1/Level1-Puzzle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Blockouts/Fase1/Level1-Puzzle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/CamTransSysScn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CamerasTransitionSystem/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameplayMechanics/GameplayMechaScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameplayMechanics/GameplayMechaScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/KeyPicking/KeyPickingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/KeyPicking/KeyPickingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/MomiaMimic/MomiaMimicMechanics.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/MomiaMimic/MomiaMimicMechanics.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/TorchOnOff/TorchOnOffScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PuzzleMechanics/TorchOnOff/TorchOnOffScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/CollisionCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/CollisionCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerComponents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/PlayerStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/FallingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/FallingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/IdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/IdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/JumpingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/JumpingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/PushingObjectState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/PushingObjectState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/RopeClimbingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/RopeClimbingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/WalkingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/StateMachine/States/WalkingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/GroundCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/GroundCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerJump.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerJump.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Testing/Player/PlayerMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +43,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50e5acd061cd4a73b7fc8eecbf07e915176600/c5/cd8e4493/LoadSceneMode.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -31,7 +56,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/DMPFP-30&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/DMPFP-114&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -100,9 +125,11 @@
       <workItem from="1745051274913" duration="2635000" />
       <workItem from="1745054570518" duration="1924000" />
       <workItem from="1745057987014" duration="1568000" />
-      <workItem from="1745426140193" duration="1379000" />
-      <workItem from="1745946597819" duration="1712000" />
-      <workItem from="1746004720482" duration="1938000" />
+      <workItem from="1746193422068" duration="3707000" />
+      <workItem from="1747149485331" duration="340000" />
+      <workItem from="1747239638094" duration="1162000" />
+      <workItem from="1747299108375" duration="10011000" />
+      <workItem from="1747316328609" duration="917000" />
     </task>
     <servers />
   </component>
@@ -116,6 +143,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

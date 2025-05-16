@@ -62,13 +62,13 @@ public class EnemyVerticalMovement : MonoBehaviour
     {
         if (drawGizmos)
         {
-            _worldPoint1 = transform.TransformPoint(localPoint1);
-            _worldPoint2 = transform.TransformPoint(localPoint2);
+            Vector2 drawWorldPoint1 = transform.TransformPoint(localPoint1);
+            Vector2 drawWorldPoint2 = transform.TransformPoint(localPoint2);
 
             Gizmos.color = Color.green;
-            Gizmos.DrawSphere(_worldPoint1, 0.1f);
-            Gizmos.DrawSphere(_worldPoint2, 0.1f);
-            Gizmos.DrawLine(_worldPoint1, _worldPoint2);
+            Gizmos.DrawSphere(drawWorldPoint1, 0.1f);
+            Gizmos.DrawSphere(drawWorldPoint2, 0.1f);
+            Gizmos.DrawLine(drawWorldPoint1, drawWorldPoint2);
         }
     }
 }

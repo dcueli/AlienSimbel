@@ -5,7 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - MimicActivator
+  - TorchOnSource
+  - TorchOffSource
+  - Torch
   - Rope
+  - Pushable
   layers:
   - Default
   - TransparentFX
@@ -14,11 +19,11 @@ TagManager:
   - Water
   - UI
   - Floor
+  - MimicActivator
+  - 
+  - 
   - Rope
-  - 
-  - 
-  - Enemy
-  - 
+  - Pusable
   - 
   - 
   - 

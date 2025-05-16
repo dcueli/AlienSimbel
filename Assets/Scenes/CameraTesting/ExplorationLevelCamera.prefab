@@ -52,7 +52,7 @@ MonoBehaviour:
     cameraOnRight: {fileID: 0}
     panDirection: 3
     panDistance: 8
-    panTime: 1
+    panTime: 2
 --- !u!61 &5717885299859601686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 436456194776746992}
-  - component: {fileID: 7834400231955191649}
+  - component: {fileID: 578489988192580466}
   m_Layer: 0
   m_Name: Cameras
   m_TagString: Untagged
@@ -252,7 +252,7 @@ Transform:
   - {fileID: 651453461715083191}
   m_Father: {fileID: 8853405890730706846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7834400231955191649
+--- !u!114 &578489988192580466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,14 +261,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2806139820394096336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433f4ce9e6bc46aa9f7eb6e3533504f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2df63828e1476d0458c15acadd671689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DebugMsgObj: {fileID: 0}
   allVirtualCameras:
   - {fileID: 3236954746943656261}
   fallPanAmount: 0.25
   fallYPanTime: 0.35
   fallSpeedYDampingChangeThreshold: -15
+  baseCameraPriority: 1
+  activeCameraPriority: 100
 --- !u!1 &6288646990054711885
 GameObject:
   m_ObjectHideFlags: 0
