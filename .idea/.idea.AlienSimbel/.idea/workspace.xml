@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +25,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/DMPFP-91",
+    "git-widget-placeholder": "feature/DMPFP-30",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,9 +94,12 @@
       <workItem from="1745051274913" duration="2635000" />
       <workItem from="1745054570518" duration="1924000" />
       <workItem from="1745057987014" duration="1568000" />
-      <workItem from="1745752186399" duration="2790000" />
-      <workItem from="1745919342120" duration="810000" />
-      <workItem from="1745921750374" duration="2524000" />
+      <workItem from="1746193422068" duration="3707000" />
+      <workItem from="1747149485331" duration="340000" />
+      <workItem from="1747239638094" duration="1162000" />
+      <workItem from="1747299108375" duration="10011000" />
+      <workItem from="1747316328609" duration="917000" />
+      <workItem from="1747474448339" duration="1029000" />
     </task>
     <servers />
   </component>
@@ -112,6 +113,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

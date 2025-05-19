@@ -19,7 +19,7 @@ public class CameraHorizontalPosition : MonoBehaviour {
 	[SerializeField] private float lerpSpeed = 5f;
 
 	private float _desiredX = 0f;
-
+	
 	/**
 	 * ================================================================================================
 	 * private Method
@@ -34,8 +34,17 @@ public class CameraHorizontalPosition : MonoBehaviour {
 	 */
 	private void FixedUpdate() {
 		float inputX = _playerInput.Movement.x;
-
-		_desiredX = inputX > 0.1f ? expectedHorPos : -expectedHorPos;
+		
+		//You dont want to change desiredX when the player isnt moving
+		if (inputX > 0.1f)
+		{
+			_desiredX = expectedHorPos;
+		}
+		else if(inputX < -0.1f)
+		{
+			_desiredX = -expectedHorPos;
+		}
+		// _desiredX = inputX > 0.1f ? expectedHorPos : -expectedHorPos;
 
 		Vector3 localTargetPos = _cameraTarget.transform.localPosition;
 		localTargetPos.x = Mathf.Lerp(localTargetPos.x, _desiredX, Time.deltaTime * lerpSpeed);
