@@ -4,66 +4,78 @@ using UnityEngine;
 
 public class LeverController : MonoBehaviour
 {
-
-    // Variables
-    // ARRAY GAMEOBJECTS
     [Header("GameObjects")]
     [SerializeField] private GameObject[] doorsToOpen;
 
-    Collider2D _doorCollider;
-    // Start is called before the first frame update
+    [Header("Timer Settings")]
+    [SerializeField] private bool hasTimer = false;
+    [SerializeField] private float timerDuration = 3f;
 
-    bool isOpen = false;
+    private bool isOpen = false;
+    private Coroutine closeRoutine;
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if (isOpen == false)
+            if (!isOpen)
             {
                 OpenDoor();
                 isOpen = true;
+
+                if (hasTimer)
+                {
+                    if (closeRoutine != null) StopCoroutine(closeRoutine);
+                    closeRoutine = StartCoroutine(AutoCloseAfterDelay());
+                }
             }
-            else
+            else if (!hasTimer) // Solo permite cerrar manualmente si no tiene temporizador
             {
                 CloseDoor();
                 isOpen = false;
-            }  
+            }
         }
     }
+
     void OpenDoor()
     {
-        for (int i = 0; i < doorsToOpen.Length; i++)
+        foreach (GameObject door in doorsToOpen)
         {
-            _doorCollider = doorsToOpen[i].GetComponent<Collider2D>();
-            if (_doorCollider != null)
+            Collider2D col = door.GetComponent<Collider2D>();
+            if (col != null)
             {
-                _doorCollider.isTrigger = true;
-                // cambia color a la puerta a amarillo
-                doorsToOpen[i].GetComponent<SpriteRenderer>().color = Color.yellow;
+                col.isTrigger = true;
+                door.GetComponent<SpriteRenderer>().color = Color.yellow;
             }
             else
             {
-                Debug.LogError("No Collider2D found on " + doorsToOpen[i].name);
+                Debug.LogError("No Collider2D found on " + door.name);
             }
         }
     }
-    
+
     void CloseDoor()
     {
-        for (int i = 0; i < doorsToOpen.Length; i++)
+        foreach (GameObject door in doorsToOpen)
         {
-            _doorCollider = doorsToOpen[i].GetComponent<Collider2D>();
-            if (_doorCollider != null)
+            Collider2D col = door.GetComponent<Collider2D>();
+            if (col != null)
             {
-                _doorCollider.isTrigger = false;
-                // cambia color a la puerta a marron
-                doorsToOpen[i].GetComponent<SpriteRenderer>().color = new Color(0.545f, 0.271f, 0.075f); // marron
-                
+                col.isTrigger = false;
+                // naranja
+                door.GetComponent<SpriteRenderer>().color = new Color(1f, 0.5f, 0f);
             }
             else
             {
-                Debug.LogError("No Collider2D found on " + doorsToOpen[i].name);
+                Debug.LogError("No Collider2D found on " + door.name);
             }
         }
+    }
+
+    IEnumerator AutoCloseAfterDelay()
+    {
+        yield return new WaitForSeconds(timerDuration);
+        CloseDoor();
+        isOpen = false;
     }
 }

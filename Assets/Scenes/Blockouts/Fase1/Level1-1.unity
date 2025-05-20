@@ -136,13 +136,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
+      propertyPath: hasTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
+      propertyPath: timerDuration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
       propertyPath: doorsToOpen.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
       propertyPath: doorsToOpen.Array.data[0]
       value: 
-      objectReference: {fileID: 102293127}
+      objectReference: {fileID: 678364695}
+    - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
+      propertyPath: doorsToOpen.Array.data[1]
+      value: 
+      objectReference: {fileID: 1823622035}
     - target: {fileID: 6809770081966228149, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
       propertyPath: m_Name
       value: Lever
@@ -387,6 +399,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8982770ba073a8489b8f54345fb8e81, type: 3}
+--- !u!1 &678364695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6838689720026520570, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
+  m_PrefabInstance: {fileID: 1213852706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &718776168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -971,7 +988,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
       propertyPath: doorsToOpen.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
       propertyPath: doorsToOpen.Array.data[0]
@@ -1695,6 +1712,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf958fd9d89a9df488a32193081d6186, type: 3}
+--- !u!1 &1823622035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6838689720026520570, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
+  m_PrefabInstance: {fileID: 970284830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1856658701
 PrefabInstance:
   m_ObjectHideFlags: 0
