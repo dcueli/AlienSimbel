@@ -46,17 +46,30 @@ public class EnemyHorizontalMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator MoveTo(Vector2 target)
+private IEnumerator MoveTo(Vector2 target)
+{
+    float rayLength = 0.1f; // distancia mínima para detectar colisión
+    LayerMask obstacleMask = LayerMask.GetMask("Default"); // ajusta si usas otros layers
+
+    while (Vector2.Distance(_rb.position, target) > 0.05f)
     {
-        while (Vector2.Distance(_rb.position, target) > 0.05f)
+        Vector2 direction = (target - _rb.position).normalized;
+
+        // Detectar si hay un obstáculo justo delante
+        RaycastHit2D hit = Physics2D.Raycast(_rb.position, direction, rayLength, obstacleMask);
+
+        if (hit.collider != null && hit.collider.isTrigger==false)
         {
-            Vector2 direction = (target - _rb.position).normalized;
-            _rb.MovePosition(_rb.position + direction * (speed * Time.deltaTime));
-            yield return new WaitForFixedUpdate();
+            // Se detecta un obstáculo delante, salir del bucle para girar
+            yield break;
         }
 
-        _rb.MovePosition(target); 
+        _rb.MovePosition(_rb.position + direction * (speed * Time.fixedDeltaTime));
+        yield return new WaitForFixedUpdate();
     }
+
+    _rb.MovePosition(target);
+}
 
     private void OnDrawGizmos()
     {

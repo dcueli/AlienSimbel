@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &102293127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6838689720026520570, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
+  m_PrefabInstance: {fileID: 1249053775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &154792216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +135,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
+      propertyPath: doorsToOpen.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
+      propertyPath: doorsToOpen.Array.data[0]
+      value: 
+      objectReference: {fileID: 102293127}
     - target: {fileID: 6809770081966228149, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
       propertyPath: m_Name
       value: Lever
@@ -600,6 +613,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1865892234699396888, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3701017158560161403, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.3269236
@@ -887,6 +904,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1865892234699396888, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3701017158560161403, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.4509118
@@ -948,6 +969,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
+      propertyPath: doorsToOpen.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656696585701907936, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
+      propertyPath: doorsToOpen.Array.data[0]
+      value: 
+      objectReference: {fileID: 102293127}
     - target: {fileID: 6809770081966228149, guid: 15ec08235130e5d4ab5f18e90f40cb2f, type: 3}
       propertyPath: m_Name
       value: Lever (1)
@@ -1005,6 +1034,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1865892234699396888, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3701017158560161403, guid: 8c4a350142bcc4647bde1378639ee62f, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.6399434
@@ -1066,6 +1099,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4602022615324366120, guid: 798b242dff3a7164592003fb725a3bc5, type: 3}
+      propertyPath: drawGizmos
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5778684457698282274, guid: 798b242dff3a7164592003fb725a3bc5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.531728
@@ -1106,9 +1143,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6277515261656891651, guid: 798b242dff3a7164592003fb725a3bc5, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277515261656891651, guid: 798b242dff3a7164592003fb725a3bc5, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7970605741950661340, guid: 798b242dff3a7164592003fb725a3bc5, type: 3}
       propertyPath: m_Name
       value: HorizontalEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970605741950661340, guid: 798b242dff3a7164592003fb725a3bc5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1343,11 +1392,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2046202245843042903, guid: 625037e706d1ccd4c90f9ac423c1b0cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.97
+      value: -7.9
       objectReference: {fileID: 0}
     - target: {fileID: 2046202245843042903, guid: 625037e706d1ccd4c90f9ac423c1b0cf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.2
+      value: 4.23
       objectReference: {fileID: 0}
     - target: {fileID: 2046202245843042903, guid: 625037e706d1ccd4c90f9ac423c1b0cf, type: 3}
       propertyPath: m_LocalPosition.z

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7810983402741343401}
   - component: {fileID: 7910077333017211339}
   - component: {fileID: 1254206719896306484}
+  - component: {fileID: 3656696585701907936}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3656696585701907936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809770081966228149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cf8218a8584b84ba5bdc13118ce17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorsToOpen: []
