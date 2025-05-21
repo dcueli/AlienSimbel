@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308cff183d529ca42962dd5abf8eee2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMsgObj: {fileID: 0}
+  DebugMsgObj: {fileID: 716477870}
   ScenesManager: {fileID: 0}
 --- !u!4 &716477872
 Transform:

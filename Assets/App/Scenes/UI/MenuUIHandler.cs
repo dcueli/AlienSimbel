@@ -41,5 +41,6 @@ public class MenuUIHandler : MonoBehaviour
     public void LoadFirstLevel()
     {
         SceneManager.LoadScene(Scenes.LevelIntro);
+        GameManager.instance.StartGame();
     }
 }

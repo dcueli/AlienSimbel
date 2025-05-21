@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollisionCheck : MonoBehaviour
@@ -9,13 +10,19 @@ public class CollisionCheck : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckDistance = 0.2f; 
     [SerializeField] private float horizontalOffset = 0.4f;
+    private LevelManager levelManager;
     
     private bool onRope = false;
     public bool OnRope { get => onRope; set => onRope = value; }
     
     private bool onPushable = false;
     public bool OnPushable { get => onPushable; set => onPushable = value; }
-    
+
+    private void Start()
+    {
+        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+    }
+
     public bool IsGrounded(BoxCollider2D collider)
     {
         if (collider == null) return false;
@@ -60,6 +67,15 @@ public class CollisionCheck : MonoBehaviour
         if (other.CompareTag("Pushable"))
         {
             onPushable = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            levelManager.RespawnPlayer();
+            GameManager.instance.NumberDeaths++;
         }
     }
 }

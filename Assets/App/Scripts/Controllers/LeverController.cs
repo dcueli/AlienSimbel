@@ -14,6 +14,8 @@ public class LeverController : MonoBehaviour
     private bool isOpen = false;
     private Coroutine closeRoutine;
 
+    private bool playerOnLever = false;
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

@@ -30,9 +30,10 @@ public class HudUIHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !pauseMenuGO.activeInHierarchy)
         {
+            pauseMenuGO.SetActive(true);
             eventSystem.enabled = true;
             animator.SetTrigger("EnterPauseMenu");
-            pauseMenuGO.SetActive(true);
+            
         }
         nDeathsText.text = GameManager.instance.NumberDeaths.ToString()+" DEATHS";
         counterText.text = FormatTimer();
@@ -42,6 +43,7 @@ public class HudUIHandler : MonoBehaviour
     public void ExitPauseMenu()
     {
         animator.SetTrigger("ExitPauseMenu");
+        
     }
 
     public void ToPauseMenu()
@@ -56,7 +58,9 @@ public class HudUIHandler : MonoBehaviour
 
     public void DeactivateUIInput()
     {
+        Debug.Log("DeactivateUIInput");
         eventSystem.enabled = false;
+        pauseMenuGO.SetActive(false);
     }
 
     public void BackToMainMenu()

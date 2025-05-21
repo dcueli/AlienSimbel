@@ -11,6 +11,7 @@ TagManager:
   - Torch
   - Rope
   - Pushable
+  - Enemy
   layers:
   - Default
   - TransparentFX

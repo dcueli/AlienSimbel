@@ -42,6 +42,13 @@ public class GameManager : BaseGameManager{
 		set => _numberDeaths = value;
 	}
 	
+	private SpawnPosition _nextSpawnPosition = SpawnPosition.START;
+
+	public SpawnPosition NextSpawnPosition
+	{
+		get => _nextSpawnPosition;
+		set => _nextSpawnPosition = value;
+	}
 	
   // Initialize and start the Videogame
   private new void Awake() {
@@ -52,13 +59,13 @@ public class GameManager : BaseGameManager{
 			#pragma warning disable CS0162 
 			if(Env.Dev == Core.NODE_ENV) {
 				Debug.Log($"GameManager > Awake > GetInstanceID::({GetInstanceID()})");
-				Debug.Log($"GameManager > Awake > currScn.name::({currScn.name})");
+				// Debug.Log($"GameManager > Awake > currScn.name::({currScn.name})");
 			}
 			#pragma warning restore CS0162
 			// END::@dcueli -> enable warning CS0162 (unrecheable code)
 
-			if (Scenes.Main == currScn.name)
-				StartGame();
+			// if (Scenes.Main == currScn.name)
+			// 	StartGame();
   }
 
 	private void SetInitialProperties() {
@@ -71,7 +78,7 @@ public class GameManager : BaseGameManager{
 		// Set GameMenu Object in <gameMenu> property because will need to build the menu options of both
 		// "Main Menu" and "Track selector Menu" and "Pause Menu"
     gameMenu = FindObjectOfType<GameMenu>();
-		currScn = GameManager.instance.scenesManager.GetCurrentSceneInfo() ?? null;
+		// currScn = GameManager.instance.scenesManager.GetCurrentSceneInfo() ?? null;
 			
 		// BEGIN::@dcueli -> disable warning CS0162 (unrecheable code)
 		#pragma warning disable CS0162
