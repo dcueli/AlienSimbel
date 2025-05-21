@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - MimicActivator
+  - TorchOnSource
+  - TorchOffSource
+  - Torch
+  - Rope
+  - Pushable
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,11 +20,11 @@ TagManager:
   - Water
   - UI
   - Floor
+  - MimicActivator
   - 
   - 
-  - 
-  - 
-  - 
+  - Rope
+  - Pusable
   - 
   - 
   - 
@@ -41,4 +48,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Back
+    uniqueID: 2381598903
+    locked: 0
+  - name: Middle
+    uniqueID: 3888111937
+    locked: 0
+  - name: Front
+    uniqueID: 658692659
     locked: 0

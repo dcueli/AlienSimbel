@@ -6,10 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="fb8f29dd-807f-47c4-a933-7fab94456f0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlienSimbel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraBias.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraBias.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraControlTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraControlTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/Camara/CameraManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting/CameraTestingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/Intro.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/Intro.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/Levels/Level1-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scenes/Levels/Level1-1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/UI/Animations/HUD/HudController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scenes/UI/Animations/HUD/HudController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/UI/Animations/HUD/ToPauseMenu.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scenes/UI/Animations/HUD/ToPauseMenu.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/UI/Animations/HUD/ToSettingsMenu.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scenes/UI/Animations/HUD/ToSettingsMenu.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/UI/HudUIHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scenes/UI/HudUIHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/UI/MainScn.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/UI/MainScn.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scenes/UI/MenuUIHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scenes/UI/MenuUIHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scripts/Controllers/LeverController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scripts/Controllers/LeverController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scripts/Controllers/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scripts/Controllers/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scripts/Controllers/StateMachine/CollisionCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scripts/Controllers/StateMachine/CollisionCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Scripts/Resources/Utils/Scenes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Scripts/Resources/Utils/Scenes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Sprites/Enemies/serpiente-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Sprites/Enemies/serpiente-Sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Sprites/Levels/Fase 1/Puerta 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Sprites/Levels/Fase 1/Puerta 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Sprites/Levels/desert-sky.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Sprites/Levels/desert-sky.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/App/Sprites/Props/lever_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/App/Sprites/Props/lever_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vendor/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Vendor/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +36,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50e5acd061cd4a73b7fc8eecbf07e915176600/ad/444c637e/Scene.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/App/Teleport.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -31,7 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature73&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop-Zetille03&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,6 +119,19 @@
       <workItem from="1743873898091" duration="2614000" />
       <workItem from="1743962001362" duration="7355000" />
       <workItem from="1744189133259" duration="697000" />
+      <workItem from="1745051274913" duration="2635000" />
+      <workItem from="1745054570518" duration="1924000" />
+      <workItem from="1745057987014" duration="1568000" />
+      <workItem from="1746193422068" duration="3707000" />
+      <workItem from="1747149485331" duration="340000" />
+      <workItem from="1747239638094" duration="1162000" />
+      <workItem from="1747299108375" duration="10011000" />
+      <workItem from="1747316328609" duration="917000" />
+      <workItem from="1747474448339" duration="1029000" />
+      <workItem from="1747586296155" duration="2623000" />
+      <workItem from="1747728099977" duration="1521000" />
+      <workItem from="1747815063802" duration="1436000" />
+      <workItem from="1747832500518" duration="3134000" />
     </task>
     <servers />
   </component>
@@ -110,6 +145,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
