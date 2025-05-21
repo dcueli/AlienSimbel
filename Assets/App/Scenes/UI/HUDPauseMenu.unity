@@ -1678,6 +1678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuGO: {fileID: 2011628280}
+  nDeathsText: {fileID: 1917019733}
+  counterText: {fileID: 1039920064}
 --- !u!95 &1301708998
 Animator:
   serializedVersion: 5

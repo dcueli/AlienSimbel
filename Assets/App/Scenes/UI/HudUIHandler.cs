@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,7 +13,10 @@ public class HudUIHandler : MonoBehaviour
     private EventSystem eventSystem;
     
     [SerializeField] private GameObject pauseMenuGO;
-    
+    [SerializeField] private TMP_Text counterText;
+    [SerializeField] private TMP_Text nDeathsText;
+
+    private string timerString;
 
     private void Start()
     {
@@ -30,6 +34,9 @@ public class HudUIHandler : MonoBehaviour
             animator.SetTrigger("EnterPauseMenu");
             pauseMenuGO.SetActive(true);
         }
+        nDeathsText.text = GameManager.instance.NumberDeaths.ToString()+" DEATHS";
+        counterText.text = FormatTimer();
+        
     }
 
     public void ExitPauseMenu()
@@ -55,5 +62,27 @@ public class HudUIHandler : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene(Scenes.Main);
+    }
+
+    private string FormatTimer()
+    {
+        TimeSpan timeSpan = TimeSpan.FromSeconds(GameManager.instance.Timer);
+
+        string timeFormatted;
+        if (timeSpan.Hours > 0)
+        {
+            timeFormatted = string.Format("{0:D2}:{1:D2}:{2:D2}",
+                timeSpan.Hours,
+                timeSpan.Minutes,
+                timeSpan.Seconds);
+        }
+        else
+        {
+            timeFormatted = string.Format("{0:D2}:{1:D2}",
+                timeSpan.Minutes,
+                timeSpan.Seconds);
+        }
+
+        return timeFormatted;
     }
 }

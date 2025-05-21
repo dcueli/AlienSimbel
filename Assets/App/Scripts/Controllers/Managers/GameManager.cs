@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -26,6 +27,22 @@ public class GameManager : BaseGameManager{
 		set => _bGameStarted = value;
 	}
 
+	private float _timer = 0f;
+
+	public float Timer
+	{
+		get => _timer;
+	}
+
+	private int _numberDeaths = 0;
+
+	public int NumberDeaths
+	{
+		get => _numberDeaths;
+		set => _numberDeaths = value;
+	}
+	
+	
   // Initialize and start the Videogame
   private new void Awake() {
       base.Awake();
@@ -78,5 +95,13 @@ public class GameManager : BaseGameManager{
 		// 
 		// Here, implemente your business logic
 		// 
+  }
+
+  private void Update()
+  {
+	  if (_bGameStarted)
+	  {
+		  _timer += Time.deltaTime;
+	  }
   }
 }
